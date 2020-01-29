@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="catalog">
+                <div class="catalog__header">
+                    <div class="catalog__search">
+                        <input type="text" id="searchInput" value>
+                        <button id="searchBtn">SEARCH</button>
+                    </div>
+                    <button class="addNew">Add New</button>
+                </div>
+                <div class="catalog__body">
+                    <table id="catalog">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Name
+                                    <div id="sort_count">&#9650;</div>
+                                </th>
+                                <th>
+                                    Price
+                                    <div id="sort_price">&#9650;</div>
+                                </th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+                <div class="edit_area">
+                    <div class="name_box">
+                        <div class="edit_area__header__name">Name:*</div>
+                        <input name="newProductName" id="newProductName" type="text" value>
+                        <div class="newProductName"></div>
+                    </div>
+                    <div class="count_box">
+                        <div class="edit_area__header__count">Count:*</div>
+                        <input name="newProductCount" id="newProductCount" type="text" value>
+                        <div class="newProductCount"></div>
+                    </div>
+                    <div class="price_box">
+                        <div class="edit_area__headerPrice">Price:*</div>
+                        <input name="newProductPrice" id="newProductPrice" type="text" value>
+                        <div class="newProductPrice"></div>
+                        <input id="newProductKey" type="number" hidden value>
+                    </div>
+                    <div class="btn_box">
+                        <button id="productSave">Add</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

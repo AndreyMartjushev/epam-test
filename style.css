@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+input {
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: 1px solid #b9b9b9;
+}
+
+button {
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: 1px solid #b9b9b9;
+  background: none;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+button:hover {
+  background: #b9b9b9;
+}
+
+.catalog {
+  margin-top: 150px;
+}
+
+.catalog__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #fff;
+  padding: 15px;
+}
+
+.catalog__search input {
+  margin-right: 15px;
+}
+
+.catalog__body table {
+  border-collapse: collapse;
+  width: 100%;
+  border-top: 1px solid #dee2e6;
+}
+
+.catalog__body th {
+  text-align: left;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.catalog__body th:last-child {
+  text-align: right;
+}
+
+.catalog__body td {
+  padding: 15px;
+}
+
+.catalog__body tr {
+  border-top: 1px solid #dee2e6;
+}
+
+.catalog__body tr:nth-child(odd) {
+  background: #fff;
+}
+
+.catalog__body tr td:last-child {
+  text-align: right;
+}
+
+.catalog__body tr td:last-child button {
+  margin-left: 15px;
+}
+
+.catalog__body .table_space_between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.catalog__body .sort_name,
+.catalog__body .sort_price {
+  display: inline-block;
+}
+
+#sort_count,
+#sort_price {
+  font-size: 18px;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.edit_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 30px;
+  padding: 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  background: #fff;
+}
+
+.edit_area > div {
+  width: 33%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.edit_area > div:first-child {
+  padding-left: 0;
+}
+
+.edit_area > div input {
+  width: 100%;
+}
+
+.btn_box button {
+  margin-top: 18px;
+}
+
+.errorValidate {
+  border: 1px solid red;
+}
+/*# sourceMappingURL=style.css.map */
